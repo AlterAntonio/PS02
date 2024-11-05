@@ -1,8 +1,8 @@
 import requests
 
-url = 'https://api.github.com/search/repositories'
+url = 'https://jsonplaceholder.typicode.com/posts'
 data = {'title': 'foo', 'body': 'bar', 'userId': 1}
 
-response = requests.get(url, data=data)
+response = requests.post(url, data=data)
 print(response.status_code)
 print(response.json())
